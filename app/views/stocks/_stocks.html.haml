@@ -1,0 +1,5 @@
+%ul#stocks
+  - @stocks.each do |stock|
+    %li
+      =check_box_tag stock.symbol, stock.symbol, false
+      =stock.symbol.upcase
